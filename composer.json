@@ -1,0 +1,14 @@
+{
+  "name": "lonsdale/google-sheet-for-jetformbuilder",
+  "description": "Google Sheets add-on for JetFormBuilder",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "GoogleSheet\\JetFormBuilder\\": "includes/"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}

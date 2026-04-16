@@ -1,0 +1,475 @@
+/* ── Google Sheet for JetFormBuilder — Settings Tab ── */
+
+.gsjfb-settings {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-bottom: 24px;
+}
+
+.gsjfb-section {
+	background: #fff;
+	border: 1px solid #dfe3eb;
+	border-radius: 8px;
+	padding: 24px;
+	box-shadow: 0 5px 12px rgba(15, 23, 42, 0.04);
+}
+
+.gsjfb-section__headline {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.gsjfb-section__headline h3 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #111827;
+}
+
+.gsjfb-section__headline a {
+	color: #2563eb;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.gsjfb-section__headline a:hover {
+	text-decoration: underline;
+}
+
+.gsjfb-section__title-group {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.gsjfb-section--provider .gsjfb-section__headline {
+	align-items: flex-start;
+}
+
+.gsjfb-general-note {
+	margin: 0 0 18px;
+	color: #4b5563;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.gsjfb-provider-description {
+	margin: 0 0 16px;
+	color: #4b5563;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+/* ── Pill badges ── */
+
+.gsjfb-pill-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.gsjfb-pill {
+	display: inline-flex;
+	align-items: center;
+	padding: 2px 8px;
+	font-size: 11px;
+	font-weight: 600;
+	border-radius: 999px;
+	background: #eef2ff;
+	color: #4338ca;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.gsjfb-pill--success {
+	background: #ecfdf5;
+	color: #065f46;
+}
+
+.gsjfb-pill--warning {
+	background: #fffbeb;
+	color: #92400e;
+}
+
+/* ── Doc link ── */
+
+.gsjfb-doc-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+	color: #2563eb;
+	text-decoration: none;
+}
+
+.gsjfb-doc-link:hover {
+	text-decoration: underline;
+}
+
+.gsjfb-doc-link .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+/* ── Service account email display ── */
+
+.gsjfb-email-code {
+	display: inline-block;
+	padding: 6px 12px;
+	background: #f3f4f6;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
+	font-size: 13px;
+	font-family: monospace;
+	color: #111827;
+	user-select: all;
+}
+
+/* ── Credentials textarea ── */
+
+.gsjfb-credentials-textarea {
+	width: 100%;
+	font-family: monospace;
+	font-size: 12px;
+	padding: 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	resize: vertical;
+	min-height: 140px;
+	background: #fafbfc;
+	box-sizing: border-box;
+}
+
+.gsjfb-credentials-textarea:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 1px #2563eb;
+	outline: none;
+}
+
+/* ── Feedback messages ── */
+
+.gsjfb-feedback {
+	font-size: 12px;
+	margin: 6px 0 0;
+}
+
+.gsjfb-feedback--success {
+	color: #065f46;
+}
+
+.gsjfb-feedback--error {
+	color: #dc2626;
+}
+
+/* ── Card footer ── */
+
+.gsjfb-provider-card__footer {
+	margin-top: 18px;
+	padding-top: 10px;
+	border-top: 1px solid #e5e7eb;
+	font-size: 12px;
+	color: #6b7280;
+}
+
+/* ── Instructions ── */
+
+.gsjfb-instructions ol {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.gsjfb-instructions li {
+	margin-bottom: 6px;
+	font-size: 13px;
+	color: #374151;
+	line-height: 1.5;
+}
+
+.gsjfb-instructions a {
+	color: #2563eb;
+	text-decoration: none;
+}
+
+.gsjfb-instructions a:hover {
+	text-decoration: underline;
+}
+
+/* ── Action Editor (Gutenberg) ── */
+
+.gsjfb-action-editor {
+	padding: 4px 0;
+}
+
+.gsjfb-action-editor .components-base-control {
+	margin-bottom: 0;
+}
+
+.gsjfb-action-editor .components-base-control__help {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.jet-form-edit-modal .components-base-control__field {
+	align-items: center;
+}
+
+/* Ensure all inputs in the action editor are 40px (matches JFB) */
+.gsjfb-action-editor .components-text-control__input {
+	height: 40px;
+}
+
+/* Fixed label width so inputs align across rows */
+.gsjfb-action-editor .components-base-control__label {
+	width: 180px;
+	min-width: 180px;
+	flex-shrink: 0;
+}
+
+.gsjfb-spreadsheet-row {
+	margin-bottom: 20px;
+}
+
+.gsjfb-field-row {
+	margin-bottom: 16px;
+}
+
+.gsjfb-label {
+	display: block;
+	font-weight: 500;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	margin-bottom: 6px;
+	color: #1e1e1e;
+	line-height: 1.4;
+}
+
+.gsjfb-label-with-tooltip {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin-bottom: 6px;
+}
+
+.gsjfb-label-with-tooltip .gsjfb-label {
+	margin-bottom: 0;
+}
+
+.gsjfb-tooltip-icon {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	color: #757575;
+	cursor: help;
+	line-height: 1;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+.gsjfb-tooltip-icon:hover {
+	color: #2271b1;
+}
+
+.gsjfb-input {
+	width: 100%;
+}
+
+.gsjfb-help {
+	font-size: 12px;
+	color: #757575;
+	margin: 4px 0 0;
+}
+
+.gsjfb-error {
+	font-size: 12px;
+	color: #dc2626;
+	margin: 4px 0 8px;
+}
+
+.gsjfb-sheet-name-row {
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+}
+
+.gsjfb-sheet-name-input {
+	flex: 1;
+	min-width: 0;
+}
+
+.gsjfb-sheet-name-input .components-base-control {
+	margin-bottom: 0;
+}
+
+.gsjfb-fetch-btn {
+	white-space: nowrap;
+	flex-shrink: 0;
+	height: 40px;
+}
+
+.gsjfb-sheet-chips-wrap {
+	margin-top: 6px;
+}
+
+.gsjfb-chips-hint {
+	margin: 0 0 6px;
+	font-size: 12px;
+	color: #6b7280;
+}
+
+.gsjfb-sheet-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.gsjfb-hint-required {
+	margin: 6px 0 0;
+	font-size: 12px;
+	color: #b45309;
+	font-style: italic;
+}
+
+.gsjfb-chip {
+	display: inline-block;
+	padding: 3px 10px;
+	border: 1px solid #2271b1;
+	border-radius: 999px;
+	font-size: 12px;
+	background: #2271b1;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.gsjfb-chip:hover {
+	border-color: #2563eb;
+	background: #2563eb;
+	color: #fff;
+}
+
+.gsjfb-chip--active {
+	border-color: #1d4ed8;
+	background: #1d4ed8;
+	color: #fff;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1d4ed8;
+}
+
+.gsjfb-separator {
+	border: none;
+	border-top: 1px solid #e5e7eb;
+	margin: 16px 0;
+}
+
+/* ── Field mapping (JFB TableList design) ── */
+
+.gsjfb-field-mapping {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em 0;
+}
+
+.gsjfb-mapping-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gsjfb-mapping-card {
+	width: calc(100% - 2px);
+	position: relative;
+	left: 1px;
+}
+
+.gsjfb-mapping-th {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.gsjfb-mapping-th-item {
+	flex: 1;
+	padding: 10px;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+.gsjfb-mapping-td {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.gsjfb-mapping-td:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.gsjfb-mapping-td-item {
+	flex-basis: 50%;
+	padding: 0 10px;
+}
+
+.gsjfb-mapping-input {
+	width: 100%;
+	height: 40px;
+	font-size: 13px;
+	padding: 0 12px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.gsjfb-mapping-input:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 1px #2563eb;
+	outline: none;
+}
+
+select.gsjfb-mapping-input {
+	padding: 0 8px;
+}
+
+.gsjfb-mapping-col-actions {
+	width: 40px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gsjfb-remove-btn.gsjfb-remove-btn {
+	min-width: unset;
+	padding: 4px;
+}
+
+.gsjfb-mapping-actions {
+	margin-top: 0;
+}
+
+.gsjfb-notice {
+	padding: 10px 14px;
+	border-radius: 4px;
+	font-size: 13px;
+	margin-bottom: 16px;
+}
+
+.gsjfb-notice--warning {
+	background: #fffbeb;
+	border-left: 4px solid #f59e0b;
+	color: #92400e;
+}
+
+@media (max-width: 600px) {
+	.gsjfb-section {
+		padding: 18px;
+	}
+}
